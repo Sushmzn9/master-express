@@ -1,0 +1,18 @@
+
+
+@rootURl = http://localhost:8000
+@userRoool = {{rootURl}}/api/v1/userdata
+
+GET {{rootURl}}
+
+
+
+###
+POST {{userRoool}}
+Content-Type: "application/json"
+
+{
+"status": "success",
+"message": "This is post section"
+
+}

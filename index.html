@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    Form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        border: 2px solid black;
+        padding: 2rem;
+    }
+</style>
+<body>
+    <Form action="/api/v1/login" method="POST">
+        <label name="name">Name</label>
+        <input name="name" type="text"></input>
+        <label>Password</label>
+        <input name="password" type="text"></input> 
+        <br/>
+        <Button type="submit">Submit</Button>
+    </Form>
+</body>
+</html>
