@@ -1,3 +1,4 @@
+import { MongoConfig } from "./Mongoconnect/MongoConfig.js";
 import express from "express";
 import path from "path";
 const app = express();
@@ -5,6 +6,8 @@ const PORT = process.env.PORT || 8000;
 const __dir = path.resolve();
 import bodyParser from "body-parser";
 app.use(bodyParser.urlencoded({ extended: false }));
+
+MongoConfig();
 
 app.post("/api/v1/userdata", (req, res) => {
   res.json({
